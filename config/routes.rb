@@ -3,5 +3,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "application#bye"
-  
+ 
+  GET "hi", to: "application#hello"
+
+  GET "bye", to: "application#bye"
+
 end
